@@ -146,12 +146,23 @@
     padding: 40px 30px;
 }
 
-#brandStrategy aside a {
-    text-decoration: none;
-    color: #fff;
+#brandStrategy aside i {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    background-image: url('/assets/icons/globe.svg');
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
-#brandStrategy aside a h2 {
+#brandStrategy aside h2 {
     font-weight: bold;
     font-size: 40px;
+}
+
+#brandStrategy aside p {
+    font-size: 14px;
+    line-height: 32px;
 }
