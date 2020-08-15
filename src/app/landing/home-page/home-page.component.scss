@@ -1,0 +1,157 @@
+#banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-image: url('/assets/images/banner_image.jpg');
+    padding-top: 10%;
+}
+
+#banner h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#banner p {
+    max-width: 600px;
+    width: 100%;
+    margin: 30px auto;
+    font-size: 16px;
+    font-weight: bold;;
+}
+
+#banner a.btn {
+    color: #fff;
+    border: #fff solid 2px;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+#banner a.text {
+    text-decoration: none;
+    color: #fff;
+}
+
+#percentage {
+    padding: 20px 0;
+}
+
+#percentage h2 {
+    font-size: 25px;
+    color: #fff;
+    background-color: #008542;
+    padding: 10px 0;
+}
+
+#percentage p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#percentage aside {
+    width: calc((100% - 120px) / 6);
+}
+
+#percentage #lowerCircle aside {
+    margin: 0 20px;
+}
+
+#percentage aside h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#percentage aside .circle {
+    width: 100%;
+    height: 165px;
+    padding: 50px;
+    border-radius: 100px;
+    border: #008542 solid 5px;
+    margin: auto;
+}
+
+#brandProducts,
+#experience {
+    padding: 40px 0;
+}
+
+#brandProducts h2 {
+    font-size: 40px;
+    color: #3d2817;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#experience h2 {
+    font-size: 30px;
+    color: #008542;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+#brandProducts .brand {
+    width: calc((100% - 140px) / 3);
+}
+
+#brandProducts .brand img {
+    width: 100%;
+}
+
+#experience aside {
+    width: calc((100% - 120px) / 6);
+}
+
+#experience aside span {
+    width: 100%;
+    height: 160px;
+    background-color: #008542;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/assets/images/product_image.jpg');
+}
+
+#experience aside h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#experience aside h4 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #3e3e3e;
+    letter-spacing: 2px;
+}
+
+#brandStrategy aside {
+    width: calc(100% / 5);
+    background-image: url('/assets/images/meeting.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
+
+#brandStrategy aside .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0 ,0.3);
+    padding: 40px 30px;
+}
+
+#brandStrategy aside a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#brandStrategy aside a h2 {
+    font-weight: bold;
+    font-size: 40px;
+}

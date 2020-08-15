@@ -1,0 +1,36 @@
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header a.earthLogo {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/assets/icons/world.svg');
+}
+
+header nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+header nav a.btn {
+    border: none;
+    background-color: #00852c;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.2s all linear;
+}
+
+header nav a.btn:hover {
+    background-color: #3d2817;
+}
