@@ -166,3 +166,59 @@
     font-size: 14px;
     line-height: 32px;
 }
+
+#recentPress h2 {
+    font-size: 30px;
+    color: #008542;
+    margin: 40px 0;
+}
+
+#recentPress aside {
+    width: calc((100% - 80px) / 3); 
+}
+
+#recentPress aside span {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    // background-color: #3d2817;
+    display: inline-block;
+}
+
+#recentPress aside span.press_image1 {
+    background-image: url('/assets/images/press_image.jpg');
+}
+
+#recentPress aside span.press_image2 {
+    background-image: url('/assets/images/press_image.jpg');
+}
+
+#recentPress aside span.press_image3 {
+    background-image: url('/assets/images/press_image.jpg');
+}
+
+#recentPress aside h3 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+#recentPress aside p {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+#recentPress a.btn {
+    margin: 40px 0;
+    border: #008542 solid 2px;
+    font-size: 20px;
+    padding: 10px 30px;
+    transition: 0.2s all linear;
+}
+
+#recentPress a.btn:hover {
+    background-color: #008542;
+    color: #fff;
+}
