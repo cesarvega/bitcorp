@@ -1,11 +1,13 @@
+@import '../../../assets/scss/lib.scss';
+
 #banner {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 600px;
     background-image: url('/assets/images/banner_image.jpg');
-    padding-top: 10%;
+    padding: 150px 0 60px 0;
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 65% 92%, 31% 97%, 0 92%);
 }
 
 #banner h1 {
@@ -22,10 +24,21 @@
 }
 
 #banner a.btn {
+    font-weight: bold;
     color: #fff;
     border: #fff solid 2px;
     border-radius: 5px;
     padding: 15px 30px;
+}
+
+#banner div.d-flex a.btn {
+    margin: 10px 0;
+    width: 100%;
+}
+
+#banner a.btn:hover {
+    color: #008542;
+    background-color: #fff;
 }
 
 #banner a.text {
@@ -33,8 +46,9 @@
     color: #fff;
 }
 
-#percentage {
+#percentage .container {
     padding: 20px 0;
+    border-bottom: #3e3e3e solid 2px;
 }
 
 #percentage h2 {
@@ -46,19 +60,17 @@
 
 #percentage p {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
+    text-align: justify;
 }
 
 #percentage aside {
-    width: calc((100% - 120px) / 6);
-}
-
-#percentage #lowerCircle aside {
-    margin: 0 20px;
+    width: 165px;
+    margin: 15px 10px;
 }
 
 #percentage aside h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -67,8 +79,9 @@
     height: 165px;
     padding: 50px;
     border-radius: 100px;
-    border: #008542 solid 5px;
+    border: #008542 solid 8px;
     margin: auto;
+    font-size: 30px;
 }
 
 #brandProducts,
@@ -87,53 +100,67 @@
     font-size: 30px;
     color: #008542;
     margin: 40px 0;
-    font-weight: 400;
+    font-weight: 600;
 }
 
-#brandProducts .brand {
-    width: calc((100% - 140px) / 3);
-}
-
-#brandProducts .brand img {
+#brandProducts img {
     width: 100%;
 }
 
+#experience { padding-bottom: 80px; }
+
 #experience aside {
-    width: calc((100% - 120px) / 6);
+    //width: calc((100% - 120px) / 6);
+    margin: 10px 0;
 }
 
 #experience aside span {
     width: 100%;
-    height: 160px;
-    background-color: #008542;
+    height: 70px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    background-image: url('/assets/images/product_image.jpg');
+    background-size: contain;
+    background-image: url('/assets/images/Kynmobi.jpg');
 }
 
 #experience aside h3 {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 10px 0;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #212121;
 }
 
 #experience aside h4 {
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
     color: #3e3e3e;
-    letter-spacing: 2px;
+    margin-bottom: 0;
 }
 
 #brandStrategy aside {
-    width: calc(100% / 5);
+    width: 100%;
     background-image: url('/assets/images/meeting.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 500px;
+    min-height: 450px;
+    transition: 0.2s all linear;
+    @include md {
+        width: calc(100% / 3);
+    }
+    @include xl {
+        width: calc(100% / 6);
+        min-height: 650px;
+    }
+}
+
+#brandStrategy aside:hover {
+    transform: scale(1.1);
+    z-index: 50;
+    -webkit-box-shadow: 0 2px 15px 0 #5e5e5e;
+    box-shadow: 0 2px 15px 0 #5e5e5e;
 }
 
 #brandStrategy aside .overlay {
@@ -142,8 +169,13 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0 ,0.3);
+    background-color: rgba(0, 0, 0 ,0.7);
     padding: 40px 30px;
+    transition: 0.2s all linear;
+}
+
+#brandStrategy aside:hover .overlay {
+    background-color: rgba(0, 0, 0 ,0.5);
 }
 
 #brandStrategy aside i {
@@ -164,7 +196,7 @@
 
 #brandStrategy aside p {
     font-size: 14px;
-    line-height: 32px;
+    line-height: 28px;
 }
 
 #recentPress h2 {
@@ -220,5 +252,21 @@
 
 #recentPress a.btn:hover {
     background-color: #008542;
+    color: #fff;
+}
+
+section#ready {
+    width: 100%;
+    height: 400px;
+    padding-top: 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/assets/images/footer_image.png');
+}
+
+section#ready h2 {
+    font-weight: bold;
+    font-size: 45px;
     color: #fff;
 }
