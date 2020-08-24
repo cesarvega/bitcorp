@@ -1,0 +1,34 @@
+@import "../../../assets/scss/lib.scss";
+
+section#bannerArea {
+    background-color: #00852c;
+    height: 200px;
+}
+section#bitCoin {
+    padding: 60px 0;
+}
+
+section#bitCoin .row {
+    margin: 40px 0;
+}
+
+section#bitCoin div.col-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#bitCoin aside.green  {
+    background-color: #00852c;
+    width: 100%;
+    height: 80px;
+    @include sm {
+        height: 100px;
+    }
+    @include md {
+        height: 180px;
+    }
+    @include lg {
+        height: 240px;
+    }
+}

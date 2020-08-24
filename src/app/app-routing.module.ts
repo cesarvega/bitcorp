@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: "",
     loadChildren: ()=>import("./landing/landing.module").then(m=>m.LandingModule)
+  },
+  {
+    path: "",
+    loadChildren: ()=>import("./bitcoin/bitcoin.module").then(m=>m.BitcoinModule)
   }
 ];
 

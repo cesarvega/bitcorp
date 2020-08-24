@@ -31,7 +31,8 @@ header a.earthLogo {
 
 header.active a.earthLogo { width: 45px; height: 45px; }
 
-header a#menuBtn {
+header a#menuBtn,
+header a#leftBtn {
     width: 25px;
     height: 25px;
     background-position: center;
@@ -42,7 +43,8 @@ header a#menuBtn {
     filter: grayscale(100%) brightness(400%);
 }
 
-header.active a#menuBtn {
+header.active a#menuBtn,
+header.active a#leftBtn {
     filter: grayscale(0%) brightness(100%);
 }
 
